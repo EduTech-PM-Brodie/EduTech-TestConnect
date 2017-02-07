@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<title>Test Connect</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" href="style2.css">
+	<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+	.sidenav a,.sidenav h4 {padding: 12px;}
+	.navbar li a {
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+	</style>
+	<body>
+
+	<!-- Navbar -->
+	<div class="top">
+	  <ul class="navbar w3-theme top w3-left-align w3-large">
+		<li><a href="#" ><img src="testConnectLogo1.png" style="width:150px;height:75px;padding-bottom:5px;"></a></li>
+	  </ul>
+	</div>
+
+	<!-- Sidenav -->
+	<nav class="sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;" id="mySidenav">
+	  <!-- Link in top right of sidenav 
+	  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large hover-black w3-hide-large" title="close menu">
+		<i class="fa fa-remove"></i>
+	  </a> -->
+	  <h4><b>Menu</b></h4>
+	  <a href="#" class="hover-black">Account</a>
+	  <a href="#" class="hover-black">Grades</a>
+	  <a href="#" class="hover-black">Courses</a>
+	  <a href="#" class="hover-black">Take Test</a>
+	</nav>
+
+	<!-- Overlay effect when opening sidenav on small screens
+	<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>-->
+
+	<!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+	<div class="main" style="margin-left:250px">
+
+	<h1 class="welcome">Welcome to</h1>
+
+	<img class="largelogo" src="testConnectLogo1.png" />
+
+	  <!-- <footer id="myFooter">
+		<div class="w3-container w3-theme-l2 w3-padding-32">
+		  <h4>Footer</h4>
+		</div>
+
+		<div class="w3-container w3-theme-l1">
+		  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+		</div>
+	  </footer>  -->
+
+	<!-- END MAIN -->
+	</div>
+
+	<script>
+	// Get the Sidenav
+	var mySidenav = document.getElementById("mySidenav");
+
+	// Get the DIV with overlay effect
+	var overlayBg = document.getElementById("myOverlay");
+
+	// Toggle between showing and hiding the sidenav, and add overlay effect
+	function w3_open() {
+		if (mySidenav.style.display === 'block') {
+			mySidenav.style.display = 'none';
+			overlayBg.style.display = "none";
+		} else {
+			mySidenav.style.display = 'block';
+			overlayBg.style.display = "block";
+		}
+	}
+
+	// Close the sidenav with the close button
+	function w3_close() {
+		mySidenav.style.display = "none";
+		overlayBg.style.display = "none";
+	}
+	</script>
+
+	<script type='text/javascript' src='//www.w3schools.com/utilcave_com/inc/ezf-min.php?a=a&cb=3&shcb=5' style='display:none;'></script>
+	</body>
+</html>
