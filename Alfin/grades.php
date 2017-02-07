@@ -9,7 +9,7 @@
 	<meta name="author" content="Alfin Rahardja" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 	<link href="homestyle.css" rel="stylesheet" type="text/css" />
-	<title>Home</title>
+	<title>Grades</title>
 </head>
 <body>
 	<header>
@@ -48,7 +48,7 @@
 	
 	<!-- Content -->
 	<div class="content">
-		<h1 class="header">Welcome to TestConnect!</h1>
+		<h2>Grades</h2>
 	</div>
 	
 	<div class="month">

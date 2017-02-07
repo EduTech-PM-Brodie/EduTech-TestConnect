@@ -9,7 +9,7 @@
 	<meta name="author" content="Alfin Rahardja" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 	<link href="homestyle.css" rel="stylesheet" type="text/css" />
-	<title>Home</title>
+	<title>Take A Test</title>
 </head>
 <body>
 	<header>
@@ -48,7 +48,6 @@
 	
 	<!-- Content -->
 	<div class="content">
-		<h1 class="header">Welcome to TestConnect!</h1>
 	</div>
 	
 	<div class="month">
@@ -107,6 +106,10 @@
 		<hr />Created by EduTech.
 		<a id="report" href="#">Report a problem.</a>
 	</footer>
+	
+	<?php
+		
+	?>
 	
 	<script type = "text/javascript">
 	<!--
