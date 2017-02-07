@@ -1,0 +1,1 @@
+ALTER TABLE referenceTest ADD fk_id_question INT FOREIGN KEY REFERENCES question(id_question)
