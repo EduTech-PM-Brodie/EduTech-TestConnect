@@ -1,0 +1,97 @@
+header	{	background-color: #111;
+			color: yellow;
+			margin: -25px;
+			height: 200px;
+			width: 102%;}
+img		{	height: 300px;
+			width: 400px;
+			margin-top: -45px;
+			margin-left: 25px;}
+body	{ 	background-color: #D3D3D3;}
+.choice
+		{
+			width: 10px;
+		}
+.navigation
+		{	height: 80%;
+			Width: 75px;
+			position: fixed;
+			background-color: #111;
+			margin-left: -10px;
+			margin-right: 90%;
+			margin-top: -15px;
+			margin-bottom: 0px;
+			padding-top: 15px;
+			padding-left: 25px;}
+.hamburger
+		{	background:none;
+			position:absolute;
+			line-height:45px;
+			color:#fff;
+			border:0;
+			font-size:1.4em;
+			font-weight:bold;
+			cursor:pointer;
+			outline:none;
+			z-index:10000000000000;
+}
+.menuOptions
+		{	font-size: 16pt;
+			color: white;}
+
+ /* The left side bar navigation menu */
+.leftBar{	margin-top: 180px;
+			height: 80%;
+			width: 0;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			overflow-x: hidden;
+			padding-top: 60px;
+			transition: 0.5s;}
+
+/* The navigation menu links */
+.leftBar a 
+		{	padding: 8px 8px 8px 32px;
+			text-decoration: none;
+			font-size: 25px;
+			color: #818181;
+			display: block;
+			transition: 0.3s;}
+
+/* When you mouse over the navigation links, change their color */
+.leftBar a:hover, a:focus
+		{	color: #f1f1f1;}
+
+/* Position and style the close button (top right corner) */
+.leftBar .closebtn 
+		{	position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 36px;
+			margin-left: 50px;}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main 	{	transition: margin-left .5s;
+			padding: 20px;}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) 
+		{	.leftBar {padding-top: 15px;}
+			.leftBar a {font-size: 18px;}}
+
+.verticalLine 
+		{	border-left: thick solid #666666;
+			margin-left: 83%;
+			height: 500px;
+			width: 1px;
+			position: relative;}
+.content{	border: solid #ffffff;
+			border-radius: 25px;
+			background-color:white;
+			height: 500px;
+			width: 1000px;
+			margin-left: 150px;
+			margin-top: -480px;}
