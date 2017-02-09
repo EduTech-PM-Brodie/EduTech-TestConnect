@@ -8,6 +8,12 @@ img		{	height: 300px;
 			margin-top: -45px;
 			margin-left: 25px;}
 body	{ 	background-color: #D3D3D3;}
+
+.qa
+		{
+			display: inline;
+			margin-left: 20px;
+		}
 .choice
 		{
 			width: 10px;

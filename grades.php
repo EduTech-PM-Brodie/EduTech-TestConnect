@@ -88,8 +88,38 @@
 				<!-- Read out all students with taken tests from database as 'options'-->
 			</select>
 		</form>
+		<br>
 		
-		<!-- Display test questions YET TO BE GRADED here -->
+		<!-- Display all test questions checking which are YET TO BE GRADED -->
+		<div class="grade_test">
+			<label class="qa"><b>Question: </b></label>
+			<p class="qa">Is this where the question will populate?</p>
+			<label class="qa"><b>Answer: </b></label>
+			<p class="qa">True</p>
+			<br>
+			<label class="qa"><b>Question: </b></label>
+			<p class="qa">Is this where the question will populate?</p>
+			<label class="qa"><b>Answer: </b></label>
+			<p class="qa">True</p>
+			<br>
+			<label class="qa"><b>Question: </b></label>
+			<p class="qa">Is this where the question will populate?</p>
+			<label class="qa"><b>Answer: </b></label>
+			<p class="qa">True</p>
+			<br>
+			
+			<!-- If YET TO BE GRADED, show true false radio buttons -->
+			<label class="qa"><b>Question: </b></label>
+			<p class="qa">Write what the question is.</p>
+			<label class="qa"><b>Students Answer: </b></label>
+			<p class="qa">Is this where the questions to grade will populate?</p>
+			<label>
+				<input type="radio" name="answer" value="true"> True 
+			</label>
+			<label>
+				<input type="radio" name="answer" value="false"> False 
+			</label>
+		</div>
 
 	</div>
 	
