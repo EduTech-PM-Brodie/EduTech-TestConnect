@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<title>Test Connect</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" href="style2.css">
+	<link rel="stylesheet" href="calendarStyle.css">
+	<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+	.sidenav a,.sidenav h4 {padding: 12px;}
+	.navbar li a {
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+	</style>
+	<body>
+
+	<!-- Navbar -->
+	<div class="top">
+	  <ul class="navbar top w3-left-align w3-large">
+		<li><a href="index.html" class="homeLogo" ><img src="testConnectLogo1.png" style="width:105px;height:50px;padding-bottom:5px;"></a></li>
+	  </ul>
+	</div>
+		<nav class="navigation">
+		<a href="account.php" class="menuOptions"><img src="Profile_Bigger_White.png" style="width:75px;height:60px;" /></a>
+		<br /><br />
+		<a href="grades.html" class="menuOptions"><img src="View_Grades.png" style="width:75px;height:60px;padding-bottom:5px;" /></a>
+		<br /><br />
+		<a href="courses.php" class="menuOptions"><img src="Courses_2_White.png" style="width:75px;height:60px;padding-bottom:5px;" /></a>
+		<br /><br />
+		<a href="takeATest.php" class="menuOptions"><img src="Take_Test_White.png" style="width:75px;height:60px;padding-bottom:5px;" /></a>
+		<br /><br />
+		<a href="#" class="menuOptions">L icon</a>
+	</nav	
+	<div class="verticalLine"></div>
+
+	<!-- Overlay effect when opening sidenav on small screens
+	<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>-->
+
+	<!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+	<div class="main" style="margin-left:250px">
+
+	<div class="backgroundDiv">
+	<h1 class="welcome">Class Grades</h1>
+    </div>
+	<div class="rightBar">
+	
+	<div class="month">
+	  <ul>
+		<li class="prev">&#10094;</li>
+		<li class="next">&#10095;</li>
+		<li>February<br>
+		  <span style="font-size:18px">2017</span>
+		</li>
+	  </ul>
+	</div>
+
+	<ul class="weekdays">
+	  <li>Mo</li>
+	  <li>Tu</li>
+	  <li>We</li>
+	  <li>Th</li>
+	  <li>Fr</li>
+	  <li>Sa</li>
+	  <li>Su</li>
+	</ul>
+
+	<ul class="days">
+	  <li></li>
+	  <li></li>
+	  <li>1</li>
+	  <li>2</li>
+	  <li>3</li>
+	  <li>4</li>
+	  <li><span class="active">5</span></li>
+	  <li>6</li>
+	  <li>7</li>
+	  <li>8</li>
+	  <li>9</li>
+	  <li>10</li>
+	  <li>12</li>
+	  <li>13</li>
+	  <li>14</li>
+	  <li>15</li>
+	  <li>16</li>
+	  <li>17</li>
+	  <li>18</li>
+	  <li>19</li>
+	  <li>20</li>
+	  <li>21</li>
+	  <li>22</li>
+	  <li>23</li>
+	  <li>24</li>
+	  <li>25</li>
+	  <li>26</li>
+	  <li>27</li>
+	  <li>28</li>  
+	</ul>
+    </div>
+	  <!-- <footer id="myFooter">
+		<div class="w3-container w3-theme-l2 w3-padding-32">
+		  <h4>Footer</h4>
+		</div>
+
+		<div class="w3-container w3-theme-l1">
+		  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+		</div>
+	  </footer>  -->
+
+	<!-- END MAIN -->
+	</div>
+
+	<script>
+	// Get the Sidenav
+	var mySidenav = document.getElementById("mySidenav");
+
+	// Get the DIV with overlay effect
+	var overlayBg = document.getElementById("myOverlay");
+
+	// Toggle between showing and hiding the sidenav, and add overlay effect
+	function w3_open() {
+		if (mySidenav.style.display === 'block') {
+			mySidenav.style.display = 'none';
+			overlayBg.style.display = "none";
+		} else {
+			mySidenav.style.display = 'block';
+			overlayBg.style.display = "block";
+		}
+	}
+
+	// Close the sidenav with the close button
+	function w3_close() {
+		mySidenav.style.display = "none";
+		overlayBg.style.display = "none";
+	}
+	</script>
+
+	<script type='text/javascript' src='//www.w3schools.com/utilcave_com/inc/ezf-min.php?a=a&cb=3&shcb=5' style='display:none;'></script>
+	</body>
+</html>
