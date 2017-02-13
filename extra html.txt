@@ -1,0 +1,25 @@
+<!-- Sidenav -->
+	<!--<nav class="sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;" id="mySidenav">
+	  <!-- Link in top right of sidenav 
+	  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large hover-black w3-hide-large" title="close menu">
+		<i class="fa fa-remove"></i>
+	  </a> -->
+	 <!-- <h4><b>Menu</b></h4>
+	  <a href="#" class="hover-black">Account</a>
+	  <a href="#" class="hover-black">Grades</a>
+	  <a href="#" class="hover-black">Courses</a>
+	  <a href="#" class="hover-black">Take Test</a>
+	</nav> -->
+	
+	<!--<nav id="mySidenav" class="leftBar" style="z-index:3;width:250px;">
+	  <a href="javascript:void(0)" class="closebtn" onclick="CloseLeftBar()">&times;</a>
+	  <a href="account.php">Account</a>
+	  <a href="grades.php">Grades</a>
+	  <a href="courses.php">Courses</a>
+	  <a href="takeATest.php">Take a test</a>
+	  <a href="#">Log out</a>
+	</nav>-->
+	
+	
+			<!--<button id="burgerMenu" onclick="OpenLeftBar()" class="hamburger">&#9776;</button>
+		<br /><br /><br /> -->
