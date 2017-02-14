@@ -74,15 +74,15 @@ margin:0px;
 letter-spacing:4px;
 }
 .welcome{
-margin-top:7%;
-margin-left:28%;
-padding-bottom:5px;;
-color:#464646;
+margin-top:15%;
+margin-left:40%;
+padding-bottom:5px;
+color:#1C1C1C;
 opacity:.5;
 }
 
 .largelogo{
-margin-left: 3%;
+margin-left: 18%;
 
 opacity:.5;
 }
@@ -90,9 +90,9 @@ opacity:.5;
 .navigation
 		{ z-index:1;	
 		height: 100%;
-			Width: 80px;
+			Width: 125px;
 			position: fixed;
-			background-color: #7D7D80;
+			background-color: #4e4f51;
 			margin-left: 0px;
 			margin-right: 90%;
 			margin-top: 0;
@@ -133,7 +133,7 @@ opacity:.5;
 			padding-top: 60px;
 			transition: 0.5s;}
 .rightBar{
-	        margin-top: 6%;
+	        margin-top: 0%;
 	        margin-left: 86.2%;
 			height: 100%;
 			width: 220px;
@@ -180,6 +180,15 @@ opacity:.5;
 			width: 1px;
 			position: relative;}
 			
+.backgroundDiv{
+        background-color: #F2F2F2;
+		border-radius: 10px;
+		margin-left: -7.5%;
+		margin-right: 18%;
+		margin-top: -17%;
+		height:728px;
+}
+			
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
 font-weight:inherit;
 }
@@ -204,7 +213,7 @@ position:relative;
 }
 
 .homeLogo{
-	width: 10%;
+	width: 100%;
 	padding-left: 0px;
 }
 .navbar {
@@ -213,9 +222,7 @@ overflow:hidden;
 margin:0;
 padding:0;
 background-color: #4e4f51;
-			border-bottom-style: double;
-			border-bottom-color: black;
-
+width: 125px;
 }
 
 .navbar li a,.w3-navitem,.navbar li .w3-btn,.navbar li .w3-input {
@@ -231,7 +238,7 @@ width:100%;
 
 .navbar li a:hover {
 color:#000;
-background-color:#fff;
+background-color:#ccc;
 }
 
 .navbar .w3-dropdown-hover,.navbar .w3-dropdown-click {
@@ -255,9 +262,6 @@ padding:0 8px;
 
 .top{
 	height:70px;
-	width: 100%;
-	position:fixed;
-	top: 0;
 }
 
 .w3-topnav a:hover {
