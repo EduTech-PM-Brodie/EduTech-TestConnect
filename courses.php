@@ -53,6 +53,34 @@
 		</h1>
 		
 		
+		<form method="GET" action="home.php" class="select_class">
+			<select name="question">
+				<option name="type" value="1">CS 306</option>
+				<option name="type" value="2">BA 411</option>
+				<!-- Read out all classes from database as 'options'-->
+			</select>
+		</form>
+		
+		<!-- Select a section-->
+		<h3>(2) Select a section</h3>
+		
+		<form method="GET" action="home.php" class="select_section">
+			<select name="question">
+				<option name="type" value="1">1</option>
+				<option name="type" value="2">2</option>
+				<option name="type" value="3">3</option>
+				<option name="type" value="4">4</option>
+				<!-- Read out all sections in the selected class from database as 'options'-->
+			</select>
+		</form>
+		
+		<!-- List all students in that class ans section -->
+		
+		<h3>Students</h3>
+		
+		<p>Brodie Mather</p>
+		<p>Alfin Rahardja</p>
+		<p>Delilah Wilps</p>
 
 	</div>
 	

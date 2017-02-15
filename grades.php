@@ -114,10 +114,10 @@
 			<label class="qa"><b>Students Answer: </b></label>
 			<p class="qa">Is this where the questions to grade will populate?</p>
 			<label>
-				<input type="radio" name="answer" value="true"> True 
+				<input type="radio" name="answer" value="true"> Correct 
 			</label>
 			<label>
-				<input type="radio" name="answer" value="false"> False 
+				<input type="radio" name="answer" value="false"> Incorrect 
 			</label>
 		</div>
 
