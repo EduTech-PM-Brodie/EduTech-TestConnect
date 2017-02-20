@@ -2,7 +2,7 @@
 <!--
 	Name: Jason Keating
 	Class: CS 414
-	date: February 3, 2017
+	Date: February 3, 2017
 -->
 <html>
 <head>

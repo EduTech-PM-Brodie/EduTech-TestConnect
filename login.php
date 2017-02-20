@@ -13,7 +13,6 @@
 				<p><input type="email" placeholder="Email"></p>
 				<p><input type="password" placeholder="Password"></p>
 				<p><input onclick="login()" type="submit" value="Log in"></p>
-			
 				<script>
 					function login() 
 					{

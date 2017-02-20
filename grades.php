@@ -2,7 +2,7 @@
 <!--
 	Name: Jason Keating
 	Class: CS 414
-	date: February 3, 2017
+	Date: February 3, 2017
 -->
 <html>
 <head>
@@ -27,7 +27,9 @@
 	  <a href="http://localhost/testconnect/home.php?">Create a test</a>
 	</div>
 
-	<br/><br/>
+	<br/>
+	<br/>
+	
 	<!-- Left Side Bar -->
 	<div class="navigation">
 		<button id="burgerMenu" onclick="OpenLeftBar()" class="hamburger">&#9776;</button>
@@ -57,9 +59,27 @@
 		
 		<form method="GET" action="home.php" class="select_class">
 			<select name="question">
-				<option name="type" value="1">CS 306</option>
-				<option name="type" value="2">BA 411</option>
+				<?php
+					// Make a connection to the database
+					
+					@ $db = new mysqli("csweb", "124827", "pcc1713");
+					  $db->select_db("cs411_124827");
+				
+					// Populate the dropdown with all classes for the signed in instructors
+					$query = "INSERT QUERY*******************";
+					$classes = $db->query($query);
+					while($class = $classes->fetch_assoc())
+					{
+						echo '
+						<option name="type" value="'.$class["id_course"].'">'.
+						$class["course_num"].'
+						</option>';
+					}
+				?>
+				<option name="type" value="CS 306">CS 306 (sample)</option>
+				<option name="type" value="BA 411">BA 411 (sample)</option>
 				<!-- Read out all classes from database as 'options'-->
+				<!-- On Change should we reload the page or how to update section dropdown???? -->
 			</select>
 		</form>
 		
@@ -68,10 +88,26 @@
 		
 		<form method="GET" action="home.php" class="select_section">
 			<select name="question">
-				<option name="type" value="1">1</option>
-				<option name="type" value="2">2</option>
-				<option name="type" value="3">3</option>
-				<option name="type" value="4">4</option>
+				<?php
+					// Make a connection to the database
+					@ $db = new mysqli("csweb", "124827", "pcc1713");
+					  $db->select_db("cs411_124827");
+				
+					// Populate the dropdown with all sections for the selected class
+					$query = "INSERT QUERY*******************";
+					$sections = $db->query($query);
+					while($section = $sections->fetch_assoc())
+					{
+						echo '
+						<option name="type" value="'.$section["id_section"].'">'.
+						$section["id_section"].'
+						</option>';
+					}
+				?>
+				<option name="type" value="1">1 (sample)</option>
+				<option name="type" value="2">2 (sample)</option>
+				<option name="type" value="3">3 (sample)</option>
+				<option name="type" value="4">4 (sample)</option>
 				<!-- Read out all classes from database as 'options'-->
 			</select>
 		</form>
@@ -82,9 +118,26 @@
 		<!-- Show only students that have TAKEN the test for THAT class -->
 		<form method="GET" action="home.php" class="select_student">
 			<select name="student">
-				<option name="type" value="1">Brodie Mather</option>
-				<option name="type" value="2">Alfin Rahardja</option>
-				<option name="type" value="3">Delilah Wilps</option>
+				<?php
+					// Make a connection to the database
+					
+					@ $db = new mysqli("csweb", "124827", "pcc1713");
+					  $db->select_db("cs411_124827");
+				
+					// Populate the dropdown with all students of the selected section and class
+					$query = "INSERT QUERY*******************";
+					$students = $db->query($query);
+					while($student = $students->fetch_assoc())
+					{
+						echo '
+						<option name="type" value="'.$student["id_user"].'">'.
+						$student["f_name"].' '.$student["l_name"].'
+						</option>';
+					}
+				?>
+				<option name="type" value="Brodie Mather">Brodie Mather (sample)</option>
+				<option name="type" value="Alfin Rahardja">Alfin Rahardja (sample)</option>
+				<option name="type" value="Delilah Wilps">Delilah Wilps (sample)</option>
 				<!-- Read out all students with taken tests from database as 'options'-->
 			</select>
 		</form>
@@ -92,6 +145,45 @@
 		
 		<!-- Display all test questions checking which are YET TO BE GRADED -->
 		<div class="grade_test">
+			<?php
+				// Make a connection to the database
+				@ $db = new mysqli("csweb", "124827", "pcc1713");
+				  $db->select_db("cs411_124827");
+			
+				// List the questions and answers of a test
+				$query = "INSERT QUERY*******************";
+				$qas = $db->query($query);
+				while($qa = $qas->fetch_assoc())
+				{
+					if(!isset($qa["answer_string"])) {
+						echo '
+						<option name="type" value="'.$student["id_user"].'">'.
+						$student["f_name"].' '.$student["l_name"].'
+						</option>';
+						
+						echo ' 
+						<label class="qa"><b>Question: </b></label>
+						<p class="qa">$qa["question_string"]</p>
+						<label class="qa"><b>Answer: </b></label>
+						<p class="qa">$qa["answer_string"]</p>
+						<br>';
+					}
+					else {
+						echo '
+						<option name="type" value="'.$student["id_user"].'">'.
+						$student["f_name"].' '.$student["l_name"].'
+						</option>';
+						
+						echo ' 
+						<label class="qa"><b>Question: </b></label>
+						<p class="qa">$qa["question_string"]</p>
+						<label class="qa"><b>Student\'s Answer: </b></label>
+						<p class="qa">$qa["answer_string"]</p>
+						<br>';
+					}
+						
+				}
+			?>
 			<label class="qa"><b>Question: </b></label>
 			<p class="qa">Is this where the question will populate?</p>
 			<label class="qa"><b>Answer: </b></label>
