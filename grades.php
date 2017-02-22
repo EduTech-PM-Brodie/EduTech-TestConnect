@@ -108,7 +108,7 @@
 				<option name="type" value="2">2 (sample)</option>
 				<option name="type" value="3">3 (sample)</option>
 				<option name="type" value="4">4 (sample)</option>
-				<!-- Read out all classes from database as 'options'-->
+				<!-- Read out all sections from database as 'options'-->
 			</select>
 		</form>
 		
@@ -157,8 +157,8 @@
 				{
 					if(!isset($qa["answer_string"])) {
 						echo '
-						<option name="type" value="'.$student["id_user"].'">'.
-						$student["f_name"].' '.$student["l_name"].'
+						<option name="type" value="'.$qa["id_user"].'">'.
+						$qa["f_name"].' '.$qa["l_name"].'
 						</option>';
 						
 						echo ' 
@@ -170,8 +170,8 @@
 					}
 					else {
 						echo '
-						<option name="type" value="'.$student["id_user"].'">'.
-						$student["f_name"].' '.$student["l_name"].'
+						<option name="type" value="'.$qa["id_user"].'">'.
+						$qa["f_name"].' '.$qa["l_name"].'
 						</option>';
 						
 						echo ' 
@@ -179,9 +179,17 @@
 						<p class="qa">$qa["question_string"]</p>
 						<label class="qa"><b>Student\'s Answer: </b></label>
 						<p class="qa">$qa["answer_string"]</p>
+						<label>
+							<input type="radio" name="answer" value="true"> Correct 
+						</label>
+						<label>
+							<input type="radio" name="answer" value="false"> Incorrect 
+						</label>
+						<label>
+							input type="textbox" name="POINTS"> Points earned 
+						</label>
 						<br>';
 					}
-						
 				}
 			?>
 			<label class="qa"><b>Question: </b></label>
@@ -212,7 +220,6 @@
 				<input type="radio" name="answer" value="false"> Incorrect 
 			</label>
 		</div>
-
 	</div>
 	
 	<script type = "text/javascript">
@@ -234,6 +241,5 @@
 		}
 	//-->
 	</script>
-	 
 </body>
 </html>
